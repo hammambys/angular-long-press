@@ -2,7 +2,7 @@ import { Component, VERSION } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
-export interface Vegetable {
+export interface Poste {
   name: string;
 }
 
@@ -13,8 +13,14 @@ export interface Vegetable {
 })
 export class AppComponent {
   constructor(private _snackBar: MatSnackBar) {}
+  postes: Poste[] = [
+    { name: 'poste 1' },
+    { name: 'poste 2' },
+    { name: 'poste 3' },
+    { name: 'poste 4' },
+  ];
 
-  openSnackBar() {
+  setDefault() {
     this._snackBar.open('Cette poste est devenu par défaut', 'OK');
   }
 
