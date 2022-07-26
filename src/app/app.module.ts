@@ -7,6 +7,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { AppComponent } from './app.component';
 import { LongPressDirective } from './long-press.directive';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatSnackBarModule,
     MatChipsModule,
     MatTooltipModule,
+    MatIconModule,
   ],
   declarations: [AppComponent, LongPressDirective],
   bootstrap: [AppComponent],
