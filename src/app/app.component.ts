@@ -33,9 +33,9 @@ export class AppComponent {
       }
     }
 
-    /*  this._snackBar.open('Cette poste est devenu par défaut', 'OK', {
+    this._snackBar.open('Cette poste est devenu par défaut', 'OK', {
       duration: this.durationInSeconds * 1000,
-    });*/
+    });
   }
 
   ngOnInit(): void {}
