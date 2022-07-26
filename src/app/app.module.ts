@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatChipsModule } from '@angular/material/chips';
 import { AppComponent } from './app.component';
 import { LongPressDirective } from './long-press.directive';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { LongPressDirective } from './long-press.directive';
     FormsModule,
     MatSnackBarModule,
     MatChipsModule,
+    MatTooltipModule,
   ],
   declarations: [AppComponent, LongPressDirective],
   bootstrap: [AppComponent],
